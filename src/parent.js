@@ -1,13 +1,13 @@
 import React from 'react';
-
+import Child from './child.js';
+import Child2 from './Child2.js';
 
 const Parent = (props) =>{
 
    return(
     <div>
-     <h1>hello {props.name}</h1>
-     {props.children}
-   <p>Now, we are starting {props.message}</p>
+       <Child name={props.name}/>
+      <Child2/>
     </div>
    ); 
 }
